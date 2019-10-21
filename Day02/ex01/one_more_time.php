@@ -6,11 +6,11 @@ array_shift($argv);
 if (!$argv)
 	exit();
 $temp = preg_replace("/\:/", " ", $argv);
-// print_r($temp);
-// echo "\n";
+print_r($temp);
+echo "\n";
 $input = explode(" ", $temp[0]);
-// print_r($input);
-// echo "\n";
+print_r($input);
+echo "\n";
 
 $input[0] = strtolower(trim($input[0]));
 if ($input[0] == "lundi")
